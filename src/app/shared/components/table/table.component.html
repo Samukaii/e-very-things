@@ -1,0 +1,30 @@
+@if (dataSource().data.length) {
+	<table mat-table [dataSource]="dataSource()" class="mat-elevation-z8 demo-table">
+		@for (column of columns(); track column) {
+			<ng-container [matColumnDef]="column.position">
+				<th mat-header-cell *matHeaderCellDef>
+					{{ column.name }}
+				</th>
+				<td (click)="rowClick.emit(row)" class="cell" mat-cell *matCellDef="let row">
+					<app-table-cell [identifier]="row.id" [cell]="getCell | call: column : row"/>
+				</td>
+			</ng-container>
+		}
+
+		<tr mat-header-row *matHeaderRowDef="displayedColumns()"></tr>
+		<tr mat-row *matRowDef="let row; columns: displayedColumns()"></tr>
+	</table>
+} @else {
+	<div data-testid="no-results" class="no-results">
+		<mat-icon>
+			category
+		</mat-icon>
+		<p class="label">
+			Nenhum produto encontrado
+		</p>
+		<p class="description">
+			Clique em "+" para adicionar um novo produto
+		</p>
+
+	</div>
+}

@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="actions">
+		<button mat-fab color="accent" data-testid="create-action" routerLink="/products/new">
+			<mat-icon>
+				add
+			</mat-icon>
+		</button>
+	</div>
+	<app-table
+		[data]="repository.data()"
+		[columns]="columns"
+		(rowClick)="rowClick($event)"
+	/>
+</div>

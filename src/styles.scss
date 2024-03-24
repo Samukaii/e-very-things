@@ -1,0 +1,28 @@
+@use '@angular/material' as mat;
+@import "./styles/theme";
+
+@include mat.core();
+
+@include mat.all-component-themes($app-theme);
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+	background-color: #fafafa;
+}
+
+.snackbar-success {
+	--mdc-snackbar-container-color: #198754;
+	.mdc-snackbar__surface {
+		min-width: 0 !important;
+	}
+}
+
+.snackbar-error {
+	--mdc-snackbar-container-color: #dc3545;
+	.mdc-snackbar__surface {
+		min-width: 0 !important;
+	}
+}

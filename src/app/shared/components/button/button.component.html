@@ -1,0 +1,37 @@
+@if (button(); as button) {
+	@switch (button.theme) {
+		@case ("raised") {
+			<button
+				[attr.data-testid]="identifier()"
+				[matTooltip]="button.tooltip || ''"
+				[class.full-width]="button.fullWidth"
+				[disabled]="button.disabled"
+				(click)="click()" [color]="button.color"
+				mat-raised-button>{{ button.text }}
+			</button>
+		}
+		@case ("icon") {
+			<button
+				[attr.data-testid]="identifier()"
+				[matTooltip]="button.tooltip || ''"
+				[disabled]="button.disabled"
+				(click)="click()" [color]="button.color"
+				mat-icon-button>
+				<mat-icon>
+					{{button.icon}}
+				</mat-icon>
+			</button>
+		}
+		@case ("stroked") {
+			<button
+				[attr.data-testid]="identifier()"
+				[matTooltip]="button.tooltip || ''"
+				[class.full-width]="button.fullWidth"
+				[disabled]="button.disabled"
+				(click)="click()" [color]="button.color"
+				mat-stroked-button>{{ button.text }}
+			</button>
+		}
+	}
+
+}

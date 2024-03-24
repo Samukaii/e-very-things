@@ -1,0 +1,43 @@
+<div class="container mat-elevation-z4">
+	@if (!loading()) {
+		<mat-toolbar color="primary">
+			<h2>{{ headerTitle() }}</h2>
+		</mat-toolbar>
+		<div class="container__content">
+			<form class="form" [formGroup]="form">
+				<mat-form-field class="full-width">
+					<mat-label>Nome</mat-label>
+					<input data-testid="name" formControlName="name" matInput placeholder="Ex. Camiseta">
+				</mat-form-field>
+
+				<mat-form-field class="full-width">
+					<mat-label>Preço</mat-label>
+					<input prefix="$ "
+						   data-testid="price"
+						   mask="separator.2"
+						   thousandSeparator="."
+						   decimalMarker=","
+						   [dropSpecialCharacters]="true"
+						   formControlName="priceInCents"
+						   matInput
+						   placeholder="Ex. R$ 50,00">
+				</mat-form-field>
+			</form>
+
+		</div>
+
+		<div class="container__actions">
+			<div class="actions">
+				<app-button
+					[context]="getFormValue"
+					[button]="saveButton()"
+				/>
+			</div>
+		</div>
+
+	} @else {
+		<div class="loading">
+			<mat-spinner [diameter]="50"></mat-spinner>
+		</div>
+	}
+</div>

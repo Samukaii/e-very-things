@@ -1,0 +1,9 @@
+<p>
+	{{ data.message }}
+</p>
+
+<app-button
+	[class.stroked]="(getButton | call: data).theme === 'stroked'"
+	(click)="snackbar.dismiss()"
+	[button]="getButton | call: data"
+/>

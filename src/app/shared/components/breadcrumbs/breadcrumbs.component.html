@@ -1,0 +1,12 @@
+<ul class="breadcrumbs">
+	@for (breadcrumb of breadcrumbs(); track breadcrumb; let isLast = $last) {
+		<li data-testid="breadcrumb-item" class="breadcrumb-item">
+			<a [routerLink]="breadcrumb.url" [class.disabled]="isLast">
+				{{ breadcrumb.label }}
+			</a>
+			@if (!isLast) {
+				<mat-icon data-testid="indicator">chevron_right</mat-icon>
+			}
+		</li>
+	}
+</ul>

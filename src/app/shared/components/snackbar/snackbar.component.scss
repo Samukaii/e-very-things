@@ -1,0 +1,26 @@
+p {
+	font-size: 1rem;
+	font-weight: 500;
+	width: 100%;
+	margin: 0;
+}
+
+.stroked {
+	::ng-deep button {
+		border-color: white !important;
+		color: white !important;
+	}
+}
+
+:host{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	min-width: 300px;
+}
+.actions {
+	width: 100%;
+	gap: 1rem;
+	justify-content: flex-end;
+	display: flex;
+}

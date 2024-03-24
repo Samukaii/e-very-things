@@ -1,0 +1,20 @@
+@if (cell(); as tableCell) {
+	@switch (tableCell.type) {
+		@case ("text") {
+			{{ tableCell.value }}
+		}
+		@case ("actions") {
+			<div class="actions">
+				@for (action of tableCell.actions; track action){
+					<app-button
+						[testIdentifier]="'table-action-' + action.name + '-' + identifier()"
+						(click)="$event.stopPropagation()"
+						[button]="action"
+					/>
+				}
+			</div>
+		}
+	}
+}
+
+
