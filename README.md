@@ -1,27 +1,48 @@
-# MagicMarketWeb
+# E-verything
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Bem-vindo ao E-verything, este é um experimento para explorar o cadastro e gerenciamento de produtos no universo E-commerce.
 
-## Development server
+![E-verything Cover](src/assets/cover.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Visão Geral
 
-## Code scaffolding
+O E-verything é um projeto experimental projetado para testar e explorar diferentes abordagens para o cadastramento e gerenciamento de produtos em lojas online. Este projeto inclui um CRUD simples com opções para criar, deletar, editar e listar produtos, além de uma barra de navegação por breadcrumbs para facilitar a navegação pelo sistema. Além disso, o projeto também é acompanhado por testes unitários para garantir a qualidade do código.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Recursos Principais
 
-## Build
+- **Cadastro de Produtos Simples**: Crie novos produtos especificando nome e preço.
+- **Edição de Produtos**: Edite facilmente os detalhes de um produto existente.
+- **Deleção de Produtos**: Exclua produtos que não são mais necessários.
+- **Listagem de Produtos**: Veja todos os produtos cadastrados em uma lista organizada.
+- **Barra de Navegação por Breadcrumbs**: Utilize breadcrumbs para navegar facilmente entre as diferentes páginas do sistema.
+- **Testes Unitários**: Certifique-se de que o código está funcionando corretamente com testes automatizados.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Requisitos
 
-## Running unit tests
+- Node versão 18 ou superior
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação
 
-## Running end-to-end tests
+Para começar a usar o E-verything em seu próprio ambiente, siga estas etapas simples:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone este repositório para o seu ambiente local.
+2. Instale as dependências necessárias executando `npm install`.
+3. Configure o banco de dados e outras configurações do sistema conforme necessário.
+4. Inicie o servidor executando `npm start`.
+5. Explore e experimente o E-verything em seu navegador preferido através do endereço local fornecido.
 
-## Further help
+## Demonstração em Vídeo
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![E-verything Demo](src/assets/demo-video.gif)
+
+Assista à demonstração em vídeo para uma visão detalhada do E-verything em ação!
+
+## Contribuição
+
+Se você está interessado em colaborar com o projeto E-verything, sinta-se à vontade para explorar, experimentar e compartilhar suas descobertas. Este projeto é uma oportunidade para aprender e crescer!
+
+## Contato
+
+Para mais informações ou para colaborar no desenvolvimento do projeto, entre em contato através do email samuelalejandro.dev@gmail.com.
+
+Obrigado por participar deste projeto. Estou empolgado para ver o que podemos aprender juntos!
