@@ -46,7 +46,7 @@ Para começar a usar o E-verything em seu próprio ambiente, siga estas etapas s
 
 Por depender de uma API, a pré-visualização na WEB não estará 100% funcional, mas se estiver curioso(a) para ver a web em funcionamento, clique no link abaixo:
 
-[Pré-visualização](https://samukaii.github.io/e-verything/products)
+[Pré-visualização](https://samukaii.github.io/e-verything-web)
 
 
 ## Contribuição
