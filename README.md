@@ -2,11 +2,13 @@
 
 Bem-vindo ao E-verything, este é um experimento para explorar o cadastro e gerenciamento de produtos no universo E-commerce.
 
-![E-verything Cover](src/assets/cover.png)
+**Este repositório é a parte WEB do projeto.** [Clique aqui para ver o repositório da API]()
 
+![E-verything Cover](src/assets/cover.png)
 ## Visão Geral
 
 O E-verything é um projeto experimental projetado para testar e explorar diferentes abordagens para o cadastramento e gerenciamento de produtos em lojas online. Este projeto inclui um CRUD simples com opções para criar, deletar, editar e listar produtos, além de uma barra de navegação por breadcrumbs para facilitar a navegação pelo sistema. Além disso, o projeto também é acompanhado por testes unitários para garantir a qualidade do código.
+
 
 ## Recursos Principais
 
@@ -35,7 +37,12 @@ Para começar a usar o E-verything em seu próprio ambiente, siga estas etapas s
 
 ![E-verything Demo](src/assets/demo-video.gif)
 
-Assista à demonstração em vídeo para uma visão detalhada do E-verything em ação!
+## Pré-visualização
+
+Por depender de uma API, a pré-visualização na WEB não estará 100% funcional, mas se estiver curioso(a) para ver a web em funcionamento, clique no link abaixo:
+
+[Pré-visualização](https://samukaii.github.io/e-verything/products)
+
 
 ## Contribuição
 
