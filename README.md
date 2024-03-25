@@ -2,7 +2,7 @@
 
 Bem-vindo ao E-verything, este é um experimento para explorar o cadastro e gerenciamento de produtos no universo E-commerce.
 
-**Este repositório é a parte WEB do projeto.** [Clique aqui para ver o repositório da API]()
+**Este repositório é a parte WEB do projeto.** [Clique aqui para ver o repositório da API](https://github.com/Samukaii/e-verything-api)
 
 ![E-verything Cover](src/assets/cover.png)
 ## Visão Geral
