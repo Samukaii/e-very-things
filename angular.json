@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"magic-market-web": {
+		"e-verything-web": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist/magic-market-web",
+						"outputPath": "dist",
 						"index": "src/index.html",
 						"stylePreprocessorOptions": {
 							"includePaths": ["./src/styles"]
@@ -71,10 +71,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "magic-market-web:build:production"
+							"buildTarget": "e-verything-web:build:production"
 						},
 						"development": {
-							"buildTarget": "magic-market-web:build:development"
+							"buildTarget": "e-verything-web:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -82,7 +82,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"buildTarget": "magic-market-web:build"
+						"buildTarget": "e-verything-web:build"
 					}
 				},
 				"test": {
